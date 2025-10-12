@@ -1,0 +1,17 @@
+cat_rs_project() {
+    local dir="${1:-.}"  # Use current directory if none provided
+    local comment_prefix="//"
+    
+    find "$dir" -name "*.rs" -type f | sort | while read -r file; do
+        # Get relative path from the starting directory
+        local rel_path="${file#$(realpath "$dir")/}"
+        
+        echo
+        echo "$comment_prefix ========================================="
+        echo "$comment_prefix File: $rel_path"
+        echo "$comment_prefix ========================================="
+        echo
+        cat "$file"
+        echo
+    done
+}
