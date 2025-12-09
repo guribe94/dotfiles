@@ -48,11 +48,15 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = Homebrew
+theme = Cyberdyne
 
 macos-titlebar-proxy-icon = "hidden"
 
 #macos-icon = "retro"
 macos-icon = "xray"
 
-font-family = "Maple Mono"
+font-family = "Andale Mono"
+
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = bottom
+keybind = shift+enter=text:\x1b\r

@@ -79,14 +79,14 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -134,3 +134,23 @@ cat << "EOF" | while read line; do center_art "$line"; done
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡈⠻⠿⠿⠿⠟⢉⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 EOF
+
+
+# Whim multi-agent coordination system
+export PATH="$HOME/code/whim/resources/whim_scripts:$PATH"
+
+# ============================================================================
+# VimMentor - AI Vim Learning Assistant
+# ============================================================================
+# Get your API key from one of these providers:
+#   - Anthropic: https://console.anthropic.com/ (Recommended)
+#   - OpenAI: https://platform.openai.com/
+#   - DeepSeek: https://platform.deepseek.com/
+#
+# API keys are stored in ~/.zshrc.local (not tracked by yadm)
+# export ANTHROPIC_API_KEY='your-key-here'
+# export OPENAI_API_KEY='sk-your-key-here'
+# export DEEPSEEK_API_KEY='your-key-here'
+
+# Source local machine-specific config (secrets, paths)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
