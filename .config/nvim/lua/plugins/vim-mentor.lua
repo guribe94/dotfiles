@@ -1,7 +1,10 @@
 -- VimMentor - AI-powered Vim learning assistant
+-- Disabled: plugin not installed locally
+if true then return {} end
+
 return {
   -- Load from local development directory
-  dir = vim.fn.expand("$HOME/code/vim-mentor"),
+  dir = "/Users/vegtam/code/vim-mentor",
 
   -- Required dependency
   dependencies = {

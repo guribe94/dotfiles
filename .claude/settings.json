@@ -1,4 +1,7 @@
 {
   "includeCoAuthoredBy": false,
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": true,
+  "enabledPlugins": {
+    "osgrep@osgrep": true
+  }
 }

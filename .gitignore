@@ -1,0 +1,51 @@
+# Machine-specific files (secrets, local overrides)
+*.local
+.zshrc.local
+.env
+.env.*
+
+# SSH private keys and known hosts
+.ssh/id_*
+.ssh/*.pem
+.ssh/known_hosts
+.ssh/known_hosts.old
+.ssh/authorized_keys
+
+# macOS
+.DS_Store
+.Trash/
+.Spotlight-V100/
+.fseventsd/
+
+# Editor/IDE
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Caches
+.cache/
+.npm/
+.node_repl_history
+.python_history
+.lesshst
+.wget-hsts
+
+# Application state (not config)
+.local/share/
+.local/state/
+
+# Logs
+*.log
+
+# GPG (keep pubring, ignore private)
+.gnupg/private-keys-v1.d/
+.gnupg/random_seed
+.gnupg/S.*
+.gnupg/.gpg-v21-migrated
+
+# Misc
+.bash_history
+.zsh_history
+.zcompdump*
