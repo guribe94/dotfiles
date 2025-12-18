@@ -154,3 +154,5 @@ export PATH="$HOME/code/whim/resources/whim_scripts:$PATH"
 
 # Source local machine-specific config (secrets, paths)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+export FLYCTL_INSTALL="/Users/vegtam/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

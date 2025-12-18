@@ -23,6 +23,8 @@ Perform a complete documentation refactor that results in:
 - **DO NOT** archive outdated content—delete it (git preserves history)
 - **DO NOT** add documentation for documentation's sake
 - **DO NOT** include aspirational/planned features unless explicitly marked and necessary
+- **DO NOT** use emojis or include ai fluff
+- **DO** be concise
 - **DO** verify all documented behaviors against actual code before writing
 
 ## Process
