@@ -1,7 +1,8 @@
 {
   "includeCoAuthoredBy": false,
-  "alwaysThinkingEnabled": true,
   "enabledPlugins": {
-    "osgrep@osgrep": true
-  }
+    "osgrep@osgrep": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
 }
