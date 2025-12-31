@@ -1,6 +1,4 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": {
-    "files": ["/Users/vegtam/.claude/CLAUDE.md"]
-  }
+  "instructions": ["/Users/vegtam/.claude/CLAUDE.md"]
 }
