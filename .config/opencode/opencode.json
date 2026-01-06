@@ -1,4 +1,9 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["/Users/vegtam/.claude/CLAUDE.md"]
+  "instructions": ["/Users/vegtam/.claude/CLAUDE.md"],
+  "permission": {
+    "edit": "allow",
+    "bash": "allow",
+    "webfetch": "allow"
+  }
 }
