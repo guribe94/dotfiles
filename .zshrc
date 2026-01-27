@@ -156,3 +156,15 @@ export PATH="$HOME/code/whim/resources/whim_scripts:$PATH"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 export FLYCTL_INSTALL="/Users/vegtam/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+eval "$(atuin init zsh)"
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# macOS: Prefer Homebrew Python over system Python
+# Handles both Apple Silicon (/opt/homebrew) and Intel (/usr/local) Macs
+if [[ "$OSTYPE" == darwin* ]]; then
+  if [[ -d "/opt/homebrew/bin" ]]; then
+    export PATH="/opt/homebrew/bin:$PATH"
+  elif [[ -d "/usr/local/bin" ]]; then
+    export PATH="/usr/local/bin:$PATH"
+  fi
+fi
